@@ -88,6 +88,7 @@ bool isPunctuation(const uint32_t cp) {
     case 0x2019:  // ’
     case 0x201C:  // “
     case 0x201D:  // ”
+    case 0x201E:  // „
     case 0x00A0:  // no-break space
     case '{':
     case '}':

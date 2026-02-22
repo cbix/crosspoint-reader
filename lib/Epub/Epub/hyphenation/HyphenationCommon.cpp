@@ -86,6 +86,7 @@ bool isPunctuation(const uint32_t cp) {
     case 0x00BB:  // »
     case 0x2018:  // ‘
     case 0x2019:  // ’
+    case 0x201A:  // ‚
     case 0x201C:  // “
     case 0x201D:  // ”
     case 0x201E:  // „
@@ -95,6 +96,7 @@ bool isPunctuation(const uint32_t cp) {
     case '[':
     case ']':
     case '/':
+    case 0x2039:  // ‹
     case 0x203A:  // ›
     case 0x2026:  // …
       return true;

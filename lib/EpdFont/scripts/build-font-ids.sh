@@ -116,6 +116,42 @@ ruby -rdigest -e 'puts [
 ].map{|f| Digest::SHA256.hexdigest(File.read(f)).to_i(16) }.sum % (2 ** 32) - (2 ** 31)'
 ))"
 
+echo "#define ALEGREYA_12_FONT_ID ($(
+ruby -rdigest -e 'puts [
+  "./alegreya_12_regular.h",
+  "./alegreya_12_bold.h",
+  "./alegreya_12_bolditalic.h",
+  "./alegreya_12_italic.h",
+].map{|f| Digest::SHA256.hexdigest(File.read(f)).to_i(16) }.sum % (2 ** 32) - (2 ** 31)'
+))"
+
+echo "#define ALEGREYA_14_FONT_ID ($(
+ruby -rdigest -e 'puts [
+  "./alegreya_14_regular.h",
+  "./alegreya_14_bold.h",
+  "./alegreya_14_bolditalic.h",
+  "./alegreya_14_italic.h",
+].map{|f| Digest::SHA256.hexdigest(File.read(f)).to_i(16) }.sum % (2 ** 32) - (2 ** 31)'
+))"
+
+echo "#define ALEGREYA_16_FONT_ID ($(
+ruby -rdigest -e 'puts [
+  "./alegreya_16_regular.h",
+  "./alegreya_16_bold.h",
+  "./alegreya_16_bolditalic.h",
+  "./alegreya_16_italic.h",
+].map{|f| Digest::SHA256.hexdigest(File.read(f)).to_i(16) }.sum % (2 ** 32) - (2 ** 31)'
+))"
+
+echo "#define ALEGREYA_18_FONT_ID ($(
+ruby -rdigest -e 'puts [
+  "./alegreya_18_regular.h",
+  "./alegreya_18_bold.h",
+  "./alegreya_18_bolditalic.h",
+  "./alegreya_18_italic.h",
+].map{|f| Digest::SHA256.hexdigest(File.read(f)).to_i(16) }.sum % (2 ** 32) - (2 ** 31)'
+))"
+
 echo "#define UI_10_FONT_ID ($(
 ruby -rdigest -e 'puts [
   "./ubuntu_10_regular.h",

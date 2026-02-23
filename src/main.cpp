@@ -116,6 +116,31 @@ EpdFont opendyslexic14ItalicFont(&opendyslexic_14_italic);
 EpdFont opendyslexic14BoldItalicFont(&opendyslexic_14_bolditalic);
 EpdFontFamily opendyslexic14FontFamily(&opendyslexic14RegularFont, &opendyslexic14BoldFont, &opendyslexic14ItalicFont,
                                        &opendyslexic14BoldItalicFont);
+
+EpdFont alegreya12RegularFont(&alegreya_12_regular);
+EpdFont alegreya12BoldFont(&alegreya_12_bold);
+EpdFont alegreya12ItalicFont(&alegreya_12_italic);
+EpdFont alegreya12BoldItalicFont(&alegreya_12_bolditalic);
+EpdFontFamily alegreya12FontFamily(&alegreya12RegularFont, &alegreya12BoldFont, &alegreya12ItalicFont,
+                                   &alegreya12BoldItalicFont);
+EpdFont alegreya14RegularFont(&alegreya_14_regular);
+EpdFont alegreya14BoldFont(&alegreya_14_bold);
+EpdFont alegreya14ItalicFont(&alegreya_14_italic);
+EpdFont alegreya14BoldItalicFont(&alegreya_14_bolditalic);
+EpdFontFamily alegreya14FontFamily(&alegreya14RegularFont, &alegreya14BoldFont, &alegreya14ItalicFont,
+                                   &alegreya14BoldItalicFont);
+EpdFont alegreya16RegularFont(&alegreya_16_regular);
+EpdFont alegreya16BoldFont(&alegreya_16_bold);
+EpdFont alegreya16ItalicFont(&alegreya_16_italic);
+EpdFont alegreya16BoldItalicFont(&alegreya_16_bolditalic);
+EpdFontFamily alegreya16FontFamily(&alegreya16RegularFont, &alegreya16BoldFont, &alegreya16ItalicFont,
+                                   &alegreya16BoldItalicFont);
+EpdFont alegreya18RegularFont(&alegreya_18_regular);
+EpdFont alegreya18BoldFont(&alegreya_18_bold);
+EpdFont alegreya18ItalicFont(&alegreya_18_italic);
+EpdFont alegreya18BoldItalicFont(&alegreya_18_bolditalic);
+EpdFontFamily alegreya18FontFamily(&alegreya18RegularFont, &alegreya18BoldFont, &alegreya18ItalicFont,
+                                   &alegreya18BoldItalicFont);
 #endif  // OMIT_FONTS
 
 EpdFont smallFont(&notosans_8_regular);
@@ -282,6 +307,10 @@ void setupDisplayAndFonts() {
   renderer.insertFont(OPENDYSLEXIC_10_FONT_ID, opendyslexic10FontFamily);
   renderer.insertFont(OPENDYSLEXIC_12_FONT_ID, opendyslexic12FontFamily);
   renderer.insertFont(OPENDYSLEXIC_14_FONT_ID, opendyslexic14FontFamily);
+  renderer.insertFont(ALEGREYA_12_FONT_ID, alegreya12FontFamily);
+  renderer.insertFont(ALEGREYA_14_FONT_ID, alegreya14FontFamily);
+  renderer.insertFont(ALEGREYA_16_FONT_ID, alegreya16FontFamily);
+  renderer.insertFont(ALEGREYA_18_FONT_ID, alegreya18FontFamily);
 #endif  // OMIT_FONTS
   renderer.insertFont(UI_10_FONT_ID, ui10FontFamily);
   renderer.insertFont(UI_12_FONT_ID, ui12FontFamily);

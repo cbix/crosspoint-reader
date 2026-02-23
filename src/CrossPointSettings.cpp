@@ -331,5 +331,17 @@ int CrossPointSettings::getReaderFontId() const {
         case EXTRA_LARGE:
           return OPENDYSLEXIC_14_FONT_ID;
       }
+    case ALEGREYA:
+      switch (fontSize) {
+        case SMALL:
+          return ALEGREYA_12_FONT_ID;
+        case MEDIUM:
+        default:
+          return ALEGREYA_14_FONT_ID;
+        case LARGE:
+          return ALEGREYA_16_FONT_ID;
+        case EXTRA_LARGE:
+          return ALEGREYA_18_FONT_ID;
+      }
   }
 }
